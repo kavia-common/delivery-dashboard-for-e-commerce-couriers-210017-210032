@@ -1,89 +1,147 @@
-/* Global App Styles - Theme Support */
+/* Global App Styles - Kavia Theme */
 
-/* Light Theme (Default) */
+/* Light Theme (Default) - Kavia Colors */
 :root,
 [data-theme="light"] {
-  --primary-color: #374151;
+  --kavia-orange: #E87A41;
+  --kavia-orange-light: #F19B6F;
+  --kavia-orange-dark: #D46628;
+  --kavia-dark: #1A1A1A;
+  --primary-color: #E87A41;
   --secondary-color: #6B7280;
-  --success-color: #059669;
+  --success-color: #10B981;
   --error-color: #EF4444;
-  --background-color: #f9fafb;
-  --surface-color: #ffffff;
-  --text-color: #111827;
+  --warning-color: #F59E0B;
+  --info-color: #3B82F6;
+  --background-color: #F9FAFB;
+  --background-secondary: #F3F4F6;
+  --surface-color: #FFFFFF;
+  --text-color: #1A1A1A;
   --text-secondary: #6B7280;
+  --text-muted: #9CA3AF;
   --border-color: #E5E7EB;
-  --shadow-color: rgba(0, 0, 0, 0.05);
-  --shadow-hover: rgba(0, 0, 0, 0.1);
-  --nav-bg: #374151;
-  --nav-text: #ffffff;
-  --nav-tab-inactive: #9CA3AF;
-  --nav-tab-hover-bg: rgba(255, 255, 255, 0.05);
+  --border-light: #F3F4F6;
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  --nav-bg: #FFFFFF;
+  --nav-text: #1A1A1A;
+  --nav-border: #E5E7EB;
+  --nav-tab-inactive: #6B7280;
+  --nav-tab-hover-bg: #F9FAFB;
+  --gradient-primary: linear-gradient(135deg, #E87A41 0%, #F19B6F 100%);
+  --gradient-surface: linear-gradient(to bottom, #FFFFFF 0%, #F9FAFB 100%);
 }
 
-/* Dark Theme */
+/* Dark Theme - Kavia Colors */
 [data-theme="dark"] {
-  --primary-color: #60A5FA;
+  --kavia-orange: #F19B6F;
+  --kavia-orange-light: #F9B894;
+  --kavia-orange-dark: #E87A41;
+  --kavia-dark: #111827;
+  --primary-color: #F19B6F;
   --secondary-color: #9CA3AF;
-  --success-color: #10B981;
+  --success-color: #34D399;
   --error-color: #F87171;
-  --background-color: #111827;
-  --surface-color: #1F2937;
+  --warning-color: #FBBF24;
+  --info-color: #60A5FA;
+  --background-color: #0F172A;
+  --background-secondary: #1E293B;
+  --surface-color: #1E293B;
   --text-color: #F9FAFB;
   --text-secondary: #D1D5DB;
-  --border-color: #374151;
-  --shadow-color: rgba(0, 0, 0, 0.3);
-  --shadow-hover: rgba(0, 0, 0, 0.5);
-  --nav-bg: #1F2937;
+  --text-muted: #9CA3AF;
+  --border-color: #334155;
+  --border-light: #1E293B;
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.5), 0 4px 6px -2px rgba(0, 0, 0, 0.4);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.6), 0 10px 10px -5px rgba(0, 0, 0, 0.5);
+  --nav-bg: #1E293B;
   --nav-text: #F9FAFB;
-  --nav-tab-inactive: #6B7280;
-  --nav-tab-hover-bg: rgba(255, 255, 255, 0.1);
+  --nav-border: #334155;
+  --nav-tab-inactive: #9CA3AF;
+  --nav-tab-hover-bg: #334155;
+  --gradient-primary: linear-gradient(135deg, #F19B6F 0%, #E87A41 100%);
+  --gradient-surface: linear-gradient(to bottom, #1E293B 0%, #0F172A 100%);
 }
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  overflow-x: hidden;
 }
 
 .App {
   min-height: 100vh;
   background-color: var(--background-color);
   color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .app-main {
-  min-height: calc(100vh - 64px);
+  min-height: calc(100vh - 72px);
+  background: var(--gradient-surface);
+}
+
+/* Smooth transitions for theme switching */
+* {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Button styles */
+button {
+  font-family: inherit;
+  font-weight: 500;
+  letter-spacing: 0.025em;
+}
+
+button:focus-visible {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Link styles */
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--kavia-orange-dark);
+  text-decoration: underline;
 }
 
 /* Icon styles */
 .icon {
   flex-shrink: 0;
+  display: inline-block;
+  vertical-align: middle;
 }
 
-/* Ensure smooth transitions */
-* {
-  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
-}
-
-/* Button reset and base styles */
-button {
-  font-family: inherit;
-}
-
-button:focus-visible {
-  outline: 2px solid var(--success-color);
-  outline-offset: 2px;
-}
-
-/* Link styles */
-a {
-  color: var(--success-color);
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-/* Scrollbar styling for webkit browsers */
+/* Custom scrollbar for webkit browsers */
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
@@ -91,15 +149,34 @@ a:hover {
 
 ::-webkit-scrollbar-track {
   background: var(--background-color);
+  border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb {
   background: var(--secondary-color);
   border-radius: 4px;
+  transition: background 0.2s ease;
 }
 
 ::-webkit-scrollbar-thumb:hover {
   background: var(--primary-color);
+}
+
+/* Firefox scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--secondary-color) var(--background-color);
+}
+
+/* Selection styling */
+::selection {
+  background-color: var(--kavia-orange);
+  color: white;
+}
+
+::-moz-selection {
+  background-color: var(--kavia-orange);
+  color: white;
 }
 
 /* Responsive text sizing */
@@ -121,10 +198,92 @@ a:hover {
   }
 }
 
+/* Utility classes */
+.kavia-gradient {
+  background: var(--gradient-primary);
+  color: white;
+}
+
+.text-gradient {
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Focus ring for accessibility */
+*:focus-visible {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
 /* Print styles */
 @media print {
   .navigation,
-  button {
-    display: none;
+  button,
+  .theme-toggle {
+    display: none !important;
   }
+
+  .App {
+    background: white;
+    color: black;
+  }
+
+  .page-container {
+    padding: 0;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.3s ease-out;
+}
+
+.animate-slideIn {
+  animation: slideIn 0.3s ease-out;
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Card hover effects */
+.card-hover {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
 }

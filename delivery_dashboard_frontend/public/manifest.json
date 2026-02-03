@@ -1,6 +1,6 @@
 {
-  "short_name": "Delivery Dashboard",
-  "name": "Delivery Dashboard for Couriers",
+  "short_name": "Kavia Delivery",
+  "name": "Kavia Delivery Dashboard for Couriers",
   "icons": [
     {
       "src": "favicon.ico",
@@ -10,6 +10,7 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#374151",
-  "background_color": "#f9fafb"
+  "theme_color": "#E87A41",
+  "background_color": "#F9FAFB",
+  "description": "Professional delivery dashboard for courier management and earnings tracking"
 }
