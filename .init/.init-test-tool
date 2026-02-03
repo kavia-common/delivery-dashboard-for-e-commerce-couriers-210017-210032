@@ -1,0 +1,4 @@
+{
+    "command": "npm run test",
+    "working_directory": "/home/kavia/workspace/code-generation/delivery-dashboard-for-e-commerce-couriers-210017-210032/delivery_dashboard_frontend"
+}
