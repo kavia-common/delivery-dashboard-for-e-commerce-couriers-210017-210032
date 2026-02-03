@@ -47,13 +47,20 @@
 .nav-tabs {
   display: flex;
   gap: 0.5rem;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.nav-tabs::-webkit-scrollbar {
+  display: none;
 }
 
 .nav-tab {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  padding: 0.625rem 1rem;
+  padding: 0.625rem 0.75rem;
   background-color: transparent;
   color: var(--nav-tab-inactive);
   border: none;
@@ -63,6 +70,7 @@
   font-weight: 500;
   transition: all 0.2s ease;
   position: relative;
+  white-space: nowrap;
 }
 
 .nav-tab:hover {
@@ -95,6 +103,16 @@
 
 .tab-text {
   font-size: 0.875rem;
+}
+
+@media (max-width: 480px) {
+  .tab-text {
+    display: none;
+  }
+  
+  .nav-tab {
+    padding: 0.625rem;
+  }
 }
 
 /* Theme Toggle Button */

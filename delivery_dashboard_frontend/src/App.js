@@ -3,6 +3,9 @@ import { ThemeProvider } from './context/ThemeContext';
 import Navigation from './components/Navigation';
 import Deliveries from './pages/Deliveries';
 import Earnings from './pages/Earnings';
+import Maps from './pages/Maps';
+import Notifications from './pages/Notifications';
+import Support from './pages/Support';
 import './App.css';
 
 // PUBLIC_INTERFACE
@@ -31,6 +34,9 @@ function App() {
         <main className="app-main">
           {activeTab === 'deliveries' && <Deliveries />}
           {activeTab === 'earnings' && <Earnings />}
+          {activeTab === 'maps' && <Maps />}
+          {activeTab === 'notifications' && <Notifications />}
+          {activeTab === 'support' && <Support />}
         </main>
       </div>
     </ThemeProvider>
