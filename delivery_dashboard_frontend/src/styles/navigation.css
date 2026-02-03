@@ -1,0 +1,136 @@
+/* Navigation Styles - Traditional Gray Theme */
+
+.navigation {
+  background-color: #374151;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 60px;
+}
+
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1.125rem;
+}
+
+.brand-icon {
+  width: 28px;
+  height: 28px;
+  color: #059669;
+  stroke-width: 2.5;
+}
+
+.brand-text {
+  display: none;
+}
+
+.nav-tabs {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.nav-tab {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.625rem 1rem;
+  background-color: transparent;
+  color: #9CA3AF;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.nav-tab:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #D1D5DB;
+}
+
+.nav-tab.active {
+  background-color: #059669;
+  color: #ffffff;
+}
+
+.nav-tab.active::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40%;
+  height: 3px;
+  background-color: #059669;
+  border-radius: 2px 2px 0 0;
+}
+
+.tab-icon {
+  width: 20px;
+  height: 20px;
+  stroke-width: 2;
+}
+
+.tab-text {
+  font-size: 0.875rem;
+}
+
+/* Tablet and Desktop */
+@media (min-width: 640px) {
+  .nav-container {
+    min-height: 64px;
+  }
+
+  .brand-text {
+    display: block;
+  }
+
+  .nav-tabs {
+    gap: 0.75rem;
+  }
+
+  .nav-tab {
+    padding: 0.75rem 1.25rem;
+    font-size: 1rem;
+  }
+
+  .tab-icon {
+    width: 22px;
+    height: 22px;
+  }
+
+  .tab-text {
+    font-size: 0.9375rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .brand-icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .brand-text {
+    font-size: 1.25rem;
+  }
+
+  .nav-tab {
+    padding: 0.75rem 1.5rem;
+  }
+}
