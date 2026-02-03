@@ -1,10 +1,10 @@
-/* Global App Styles - Zepto-like Modern Mobile Theme */
+/* Global App Styles - Premium Polished UI */
 
-/* Light Theme (Default) - Zepto-inspired vibrant colors */
+/* Light Theme (Default) - Premium color palette */
 :root,
 [data-theme="light"] {
   --primary-color: #6C5CE7;
-  --primary-dark: #5F3DC4;
+  --primary-dark: #5643C7;
   --primary-light: #A29BFE;
   --secondary-color: #00B894;
   --accent-color: #FF6B6B;
@@ -20,10 +20,10 @@
   --text-muted: #B2BEC3;
   --border-color: #E8ECEF;
   --border-light: #F5F7FA;
-  --shadow-sm: 0 2px 8px rgba(108, 92, 231, 0.08);
-  --shadow-md: 0 4px 12px rgba(108, 92, 231, 0.12);
-  --shadow-lg: 0 8px 24px rgba(108, 92, 231, 0.16);
-  --shadow-xl: 0 12px 32px rgba(108, 92, 231, 0.2);
+  --shadow-sm: 0 2px 12px rgba(108, 92, 231, 0.08), 0 1px 3px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 16px rgba(108, 92, 231, 0.12), 0 2px 6px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 8px 28px rgba(108, 92, 231, 0.16), 0 4px 12px rgba(0, 0, 0, 0.08);
+  --shadow-xl: 0 12px 40px rgba(108, 92, 231, 0.22), 0 6px 16px rgba(0, 0, 0, 0.1);
   --nav-bg: #FFFFFF;
   --nav-text: #2D3436;
   --nav-border: #E8ECEF;
@@ -32,13 +32,13 @@
   --gradient-primary: linear-gradient(135deg, #6C5CE7 0%, #A29BFE 100%);
   --gradient-success: linear-gradient(135deg, #00B894 0%, #00D2A0 100%);
   --gradient-accent: linear-gradient(135deg, #FF6B6B 0%, #FF9E9E 100%);
-  --gradient-surface: linear-gradient(to bottom, #FFFFFF 0%, #F8F9FD 100%);
-  --card-radius: 16px;
-  --button-radius: 12px;
+  --gradient-surface: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(248, 249, 253, 0.98) 100%);
+  --card-radius: 18px;
+  --button-radius: 14px;
   --input-radius: 12px;
 }
 
-/* Dark Theme - Zepto-inspired dark mode */
+/* Dark Theme - Premium dark mode */
 [data-theme="dark"] {
   --primary-color: #A29BFE;
   --primary-dark: #6C5CE7;
@@ -57,10 +57,10 @@
   --text-muted: #636E72;
   --border-color: #3A3F4A;
   --border-light: #2A2F38;
-  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
-  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
-  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.5);
-  --shadow-xl: 0 12px 32px rgba(0, 0, 0, 0.6);
+  --shadow-sm: 0 2px 12px rgba(0, 0, 0, 0.3), 0 1px 3px rgba(0, 0, 0, 0.2);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.4), 0 2px 6px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 8px 28px rgba(0, 0, 0, 0.5), 0 4px 12px rgba(0, 0, 0, 0.4);
+  --shadow-xl: 0 12px 40px rgba(0, 0, 0, 0.6), 0 6px 16px rgba(0, 0, 0, 0.5);
   --nav-bg: #22262E;
   --nav-text: #F8F9FD;
   --nav-border: #3A3F4A;
@@ -69,9 +69,9 @@
   --gradient-primary: linear-gradient(135deg, #A29BFE 0%, #6C5CE7 100%);
   --gradient-success: linear-gradient(135deg, #00D2A0 0%, #00B894 100%);
   --gradient-accent: linear-gradient(135deg, #FF9E9E 0%, #FF6B6B 100%);
-  --gradient-surface: linear-gradient(to bottom, #2A2F38 0%, #1A1D23 100%);
-  --card-radius: 16px;
-  --button-radius: 12px;
+  --gradient-surface: linear-gradient(135deg, rgba(42, 47, 56, 0.95) 0%, rgba(26, 29, 35, 0.98) 100%);
+  --card-radius: 18px;
+  --button-radius: 14px;
   --input-radius: 12px;
 }
 
