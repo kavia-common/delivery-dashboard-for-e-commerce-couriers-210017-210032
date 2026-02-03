@@ -1,6 +1,8 @@
-/* Global App Styles - Traditional Gray Theme */
+/* Global App Styles - Theme Support */
 
-:root {
+/* Light Theme (Default) */
+:root,
+[data-theme="light"] {
   --primary-color: #374151;
   --secondary-color: #6B7280;
   --success-color: #059669;
@@ -10,6 +12,31 @@
   --text-color: #111827;
   --text-secondary: #6B7280;
   --border-color: #E5E7EB;
+  --shadow-color: rgba(0, 0, 0, 0.05);
+  --shadow-hover: rgba(0, 0, 0, 0.1);
+  --nav-bg: #374151;
+  --nav-text: #ffffff;
+  --nav-tab-inactive: #9CA3AF;
+  --nav-tab-hover-bg: rgba(255, 255, 255, 0.05);
+}
+
+/* Dark Theme */
+[data-theme="dark"] {
+  --primary-color: #60A5FA;
+  --secondary-color: #9CA3AF;
+  --success-color: #10B981;
+  --error-color: #F87171;
+  --background-color: #111827;
+  --surface-color: #1F2937;
+  --text-color: #F9FAFB;
+  --text-secondary: #D1D5DB;
+  --border-color: #374151;
+  --shadow-color: rgba(0, 0, 0, 0.3);
+  --shadow-hover: rgba(0, 0, 0, 0.5);
+  --nav-bg: #1F2937;
+  --nav-text: #F9FAFB;
+  --nav-tab-inactive: #6B7280;
+  --nav-tab-hover-bg: rgba(255, 255, 255, 0.1);
 }
 
 * {

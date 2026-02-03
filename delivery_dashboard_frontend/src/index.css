@@ -13,9 +13,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #f9fafb;
-  color: #111827;
+  background-color: var(--background-color, #f9fafb);
+  color: var(--text-color, #111827);
   line-height: 1.6;
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 code {
@@ -55,6 +56,6 @@ html {
 
 /* Focus styles for accessibility */
 *:focus-visible {
-  outline: 2px solid #059669;
+  outline: 2px solid var(--success-color, #059669);
   outline-offset: 2px;
 }

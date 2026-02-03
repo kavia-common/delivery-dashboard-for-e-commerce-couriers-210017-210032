@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { ThemeProvider } from './context/ThemeContext';
 import Navigation from './components/Navigation';
 import Deliveries from './pages/Deliveries';
 import Earnings from './pages/Earnings';
@@ -8,7 +9,7 @@ import './App.css';
 /**
  * Main App component
  * Handles tab routing between Deliveries and Earnings pages
- * Provides navigation and page rendering
+ * Provides navigation and page rendering with theme support
  */
 function App() {
   const [activeTab, setActiveTab] = useState('deliveries');
@@ -23,14 +24,16 @@ function App() {
   };
 
   return (
-    <div className="App">
-      <Navigation activeTab={activeTab} onTabChange={handleTabChange} />
-      
-      <main className="app-main">
-        {activeTab === 'deliveries' && <Deliveries />}
-        {activeTab === 'earnings' && <Earnings />}
-      </main>
-    </div>
+    <ThemeProvider>
+      <div className="App">
+        <Navigation activeTab={activeTab} onTabChange={handleTabChange} />
+        
+        <main className="app-main">
+          {activeTab === 'deliveries' && <Deliveries />}
+          {activeTab === 'earnings' && <Earnings />}
+        </main>
+      </div>
+    </ThemeProvider>
   );
 }
 
