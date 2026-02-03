@@ -105,9 +105,9 @@ body {
 }
 
 .app-main {
-  min-height: calc(100vh - 64px);
+  min-height: calc(100vh - 72px);
   background: var(--background-color);
-  padding-bottom: 80px;
+  padding-bottom: 0;
 }
 
 /* Smooth transitions for theme switching */
@@ -197,7 +197,7 @@ a:hover {
   }
   
   .app-main {
-    padding-bottom: 64px;
+    padding-bottom: 0;
   }
 }
 

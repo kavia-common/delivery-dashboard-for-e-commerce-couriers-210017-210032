@@ -20,7 +20,7 @@
   display: flex;
   justify-content: space-between;
   align-items: stretch;
-  min-height: 64px;
+  min-height: 72px;
 }
 
 /* Brand Section - Hidden on mobile */
@@ -98,8 +98,8 @@
 }
 
 .tab-icon {
-  width: 24px;
-  height: 24px;
+  width: 28px;
+  height: 28px;
   stroke-width: 2.5;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -132,7 +132,7 @@
   .nav-container {
     max-width: 1400px;
     padding: 0 1.5rem;
-    min-height: 72px;
+    min-height: 76px;
   }
 
   .nav-brand {
