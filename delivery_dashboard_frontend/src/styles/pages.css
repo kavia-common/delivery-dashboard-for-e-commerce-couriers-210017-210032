@@ -1,5 +1,7 @@
 /* Pages Styles - Zepto-like Modern Mobile Theme */
 
+@import './support.css';
+
 /* Common Page Styles */
 .page-container {
   min-height: calc(100vh - 72px);
